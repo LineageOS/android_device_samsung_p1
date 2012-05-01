@@ -19,6 +19,10 @@
 # Inherit device configuration.
 $(call inherit-product, device/samsung/p1/p1.mk)
 
+# init files
+PRODUCT_COPY_FILES += \
+        device/samsung/p1/tv.rc:root/tv.rc 
+
 # --------------------------------------------------------------------------------
 # Discard inherited values and use our own instead.
 # --------------------------------------------------------------------------------
