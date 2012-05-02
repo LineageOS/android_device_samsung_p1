@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAASn//9TA\u003d",
+        "filename": "full_p1l.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2012-05-02T13:09:01Z",
+      "side": 1,
+      "message": "^fix whitespace :)",
+      "revId": "863780c2bc4a99b6c4a2b44a7dc49d9e9e04e490",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAASn//9S8\u003d",
+        "filename": "init.gt-p1000.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2012-05-02T13:09:01Z",
+      "side": 1,
+      "message": "How about importing only if cm.device is p1l",
+      "revId": "863780c2bc4a99b6c4a2b44a7dc49d9e9e04e490",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}

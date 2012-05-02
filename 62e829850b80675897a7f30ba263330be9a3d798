@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAASn//9S0\u003d",
+        "filename": "recovery.fstab",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2012-05-02T13:09:01Z",
+      "side": 0,
+      "message": "Why remove them?",
+      "revId": "62e829850b80675897a7f30ba263330be9a3d798",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
