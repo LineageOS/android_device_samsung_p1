@@ -47,17 +47,11 @@ $(call inherit-product-if-exists, vendor/samsung/p1/p1-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Init files
-PRODUCT_COPY_FILES += \
-	device/samsung/p1/init.gt-p1000.rc:root/init.gt-p1000.rc \
-	device/samsung/p1/ueventd.gt-p1000.rc:root/ueventd.gt-p1000.rc 
-
 # vold
 PRODUCT_COPY_FILES += \
         device/samsung/p1/prebuilt/etc/vold.fstab:system/etc/vold.fstab
 
-# RIL
-# Permissions
+# RIL permissions
 PRODUCT_COPY_FILES += \
 	frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
@@ -84,6 +78,11 @@ PRODUCT_AAPT_CONFIG := large hdpi
 # --------------------------------------------------------------------------------
 # define common P1 product settings
 # --------------------------------------------------------------------------------
+
+# config for init.<device>.rc & ueventd.<device>.rc generation - see p1-common/Android.mk
+TARGET_INITRC_IMPORT += init.p1-common.rc usb.rc
+TARGET_INITRC_FILES += device/samsung/p1/init.gt-p1000.rc
+TARGET_UEVENTDRC_FILES += device/samsung/p1/ueventd.gt-p1000.rc
 
 # set here product definitions that valid for all p1 products
 PRODUCT_BRAND := samsung
