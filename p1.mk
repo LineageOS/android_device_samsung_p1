@@ -47,6 +47,10 @@ $(call inherit-product-if-exists, vendor/samsung/p1/p1-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+# --------------------------------------------------------------------------------
+# define common P1 product settings
+# --------------------------------------------------------------------------------
+
 # Init files
 PRODUCT_COPY_FILES += \
 	device/samsung/p1/init.gt-p1000.rc:root/init.gt-p1000.rc \
@@ -88,9 +92,9 @@ PRODUCT_LOCALES += hdpi
 # Screen size is "large" 7'tablet, density is "hdpi"
 PRODUCT_AAPT_CONFIG := large hdpi
 
-# --------------------------------------------------------------------------------
-# define common P1 product settings
-# --------------------------------------------------------------------------------
+# Releasetools
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/samsung/p1/releasetools/p1_ota_from_target_files
+TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/p1/releasetools/p1_img_from_target_files
 
 # set here product definitions that valid for all p1 products
 PRODUCT_BRAND := samsung
