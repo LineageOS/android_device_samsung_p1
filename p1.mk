@@ -82,9 +82,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
        ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc \
        persist.sys.vold.switchexternal=0
 
-# keep dalvik cache on /data
-PRODUCT_PROPERTY_OVERRIDES += \
-	dalvik.vm.dexopt-data-only=1
+# Modem script
+PRODUCT_COPY_FILES += \
+	device/samsung/p1/20-modem.sh:20-modem.sh
 
 # set recovery.fstab location (needed for p1l & p1n products)
 TARGET_RECOVERY_FSTAB := device/samsung/p1/recovery.fstab
