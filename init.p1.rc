@@ -3,14 +3,15 @@ import init.p1.usb.rc
 
 on init
 
+    export SECONDARY_STORAGE /storage/sdcard1
+    mkdir /storage 0050 system sdcard_r
+    mkdir /storage/sdcard1 0000 system system
+    symlink /storage/sdcard1 /mnt/emmc
+    symlink /mnt/emmc /emmc
+
     # create P1 device specific partition directories
     mkdir /radio
     mkdir /efs
-
-    export SECONDARY_STORAGE /storage/sdcard1
-    mkdir /storage/sdcard1 0000 system system
-    symlink /storage/sdcard1 /mnt/emmc
-    symlink /storage/sdcard1 /emmc
 
 on fs
 
