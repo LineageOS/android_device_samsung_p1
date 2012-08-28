@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAW3//+/A\u003d",
+        "filename": "init.p1.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2012-08-28T11:26:59Z",
+      "side": 1,
+      "message": "We need to do this as this is ran before init.p1-common.rc (not sure , but seems to be so), but then it also creates this dir and so /storage/sdcard1 is not found.\nA solution would be to move the common code to init.p1(c).rc, or mkdir -p if init allows that (checking the latter).",
+      "revId": "795aed3b68315d171607a5df0033334aa9cf83e5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
