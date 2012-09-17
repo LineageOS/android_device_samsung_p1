@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAYX//+rc\u003d",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2012-09-17T04:55:41Z",
+      "side": 1,
+      "message": "s/phones/devices/",
+      "revId": "d1d47f9ef6d96107b8ed4b4d4d7d0839e2c4378d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
