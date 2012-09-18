@@ -103,10 +103,3 @@ PRODUCT_AAPT_CONFIG := large hdpi
 # set here product definitions that valid for all p1 products
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-
-# Set build fingerprint / ID / product name etc.
-PRODUCT_BUILD_PROP_OVERRIDES += \
-       PRODUCT_NAME=GT-P1000 \
-       TARGET_DEVICE=GT-P1000 \
-       BUILD_FINGERPRINT=samsung/GT-P1000/GT-P1000:2.3.5/GINGERBREAD/XXJVT:user/release-keys \
-       PRIVATE_BUILD_DESC="GT-P1000-user 2.3.5 GINGERBREAD XXJVT release-keys"

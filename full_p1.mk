@@ -12,6 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Set build fingerprint / ID / product name etc.
+PRODUCT_BUILD_PROP_OVERRIDES += \
+       PRODUCT_NAME=GT-P1000 \
+       TARGET_DEVICE=GT-P1000 \
+       BUILD_FINGERPRINT=samsung/GT-P1000/GT-P1000:2.3.5/GINGERBREAD/XWJQ3:user/release-keys \
+       PRIVATE_BUILD_DESC="GT-P1000-user 2.3.5 GINGERBREAD XWJQ3 release-keys"
+
 # --------------------------------------------------------------------------------
 # This file is the build configuration for a full Android build.
 # --------------------------------------------------------------------------------
