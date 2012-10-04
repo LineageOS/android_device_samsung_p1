@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAYn//+HE\u003d",
+        "filename": "full_p1l.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 2751
+      },
+      "writtenOn": "2012-10-04T20:18:54Z",
+      "side": 1,
+      "message": "Add PRODUCT_MODEL here and remove it, PRODUCT_NAME and TARGET_DEVICE from p1l/cm.mk\n\nWe have same situation in p1n/cm.mk",
+      "revId": "35e5f849f069f30f2b5c98da6b1e71a2b0e98a7f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
