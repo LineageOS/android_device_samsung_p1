@@ -19,14 +19,6 @@
 # Inherit device configuration.
 $(call inherit-product, device/samsung/p1/p1.mk)
 
-# --------------------------------------------------------------------------------
-# Discard inherited values and use our own instead.
-# --------------------------------------------------------------------------------
-
-PRODUCT_NAME := full_p1
-PRODUCT_DEVICE := p1
-PRODUCT_MODEL := GT-P1000
-
 # kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/p1
 TARGET_KERNEL_CONFIG := cyanogenmod_$(PRODUCT_DEVICE)_defconfig
