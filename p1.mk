@@ -49,7 +49,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Init files
 PRODUCT_COPY_FILES += \
-	device/samsung/p1/init.p1.rc:root/init.p1.rc \
+	device/samsung/p1/init.target.rc:root/init.target.rc \
 	device/samsung/p1/ueventd.p1.rc:root/ueventd.p1.rc
 
 # vold
@@ -83,6 +83,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
        ro.additionalmounts=/storage/sdcard1 \
        ro.vold.switchablepair=/storage/sdcard0,/storage/sdcard1 \
        persist.sys.vold.switchexternal=1
+
+PRODUCT_COPY_FILES += \
+	device/samsung/p1/p1ln.sh:p1ln.sh
 
 # set recovery.fstab location (needed for p1l & p1n products)
 TARGET_RECOVERY_FSTAB := device/samsung/p1/recovery.fstab
